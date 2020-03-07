@@ -2,27 +2,23 @@
 <html lang="en">
 
 <head>
-    <title>Neelesh Saladi</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
- <link rel="stylesheet" href="runrate.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
-<style>
+    <meta charset="UTF-8">
+    <meta name="author" content="Neelesh Saladi">
+    <meta name="Description" content="My developer page">
+    <title>Calculation</title>
    
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.11.0/css/mdb.min.css" rel="stylesheet">
+    <script src = "./main.js"></script>
+</head>
 
 <body>
-    <div class="jumbotron" style="margin-bottom:0">
-        <h1 style="color:grey"id="headertext">Calculate here</h1>
-        </div>
-    </header>
-
+    <link rel="stylesheet" href="runrate.css">
+    <!--Navbar -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-red sticky-top">
         <a class="navbar-brand" href="index.html">
             
@@ -47,45 +43,44 @@
             </ul>
         </div>
     </nav>
-    
+    <main>
+        <div class="jumbotron mdb-color lighten-2 white-text mb-0 ">
+            <!-- Title -->
+            <h2 class="card-title h2 text-center">Area of Rhombus
+            </h2>
+            <h3><b>Please Enter Side: </b> </h3>
+            <form style="color:white;" action="#!">
 
-    </h6>
-    
-    <div class="view" style="background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencealert.com%2Fwhat-is-the-secret-meaning-behind-the-devil-s-number-666-mathematics&psig=AOvVaw3Yr2HP6f0SLGVEWq88jIHf&ust=1581296576700000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjFn_uiw-cCFQAAAAAdAAAAABAE');
-     background-repeat: no-repeat;
-      background-size: cover;
-       background-position: center center;">
-           
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">NUM</span>
-                </div>
-                <input type="text" class="form-control" placeholder="Enter a number ">
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">NUM</span>
-                </div>
-                <input type="text" class="form-control" placeholder="Enter one more number ">
-            </div>
-            <button type="submit" class="btn btn-primary">Calculate</button>
-            <br><br>
-            <p><b>Result:
-                
-            
+                <p></p>
+                <label for="Side"><b>Side:</b></label>
+                <input class="form-control" type="text" id="lengthvalue">
+                <p></p>
+           <button type="submit" class="btn btn-blue-grey btn-rounded" onClick = "area();">Area of the Rhombus</button>
+            <p></p>
+            Area of Rhombus:
+            <span id="res"></span>
+            <br>
+            <br>
+            Rhombus Size: <input type="text" id="rhombussize" />
+            <br>
+            <br>
+            Rhombus Color: <input type="text" id="rhombuscolor" />
+            <br>
+            <br>
+            <p></p>
+           Size and color of the rhombus is:
+            <span id="res2"></span>
+            </form>
+            <!-- Form -->
+ 
+
         </div>
-    </div>
 
-    <br>
-    <br>
-</main>
+    </main>
+    <footer>
 
+        <p style="font-size:14px" id="copyright">© Neelesh Saladi</p>
+        </footer>
 
-<footer>
-
-    <p style="font-size:14px" id="copyright">© Neelesh Saladi</p>
-    </footer>
 
 </body>
